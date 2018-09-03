@@ -1,0 +1,354 @@
+\documentclass[11pt]{article}
+
+% Use this when displaying a new command
+
+\newcommand{\command}[1]{``\lstinline{#1}''}
+\newcommand{\program}[1]{\lstinline{#1}}
+\newcommand{\url}[1]{\lstinline{#1}}
+\newcommand{\channel}[1]{\lstinline{#1}}
+\newcommand{\option}[1]{``{#1}''}
+\newcommand{\step}[1]{``{#1}''}
+
+\usepackage{longtable}
+
+\usepackage{pifont}
+\newcommand{\checkmark}{\ding{51}}
+\newcommand{\naughtmark}{\ding{55}}
+
+\usepackage{listings}
+\lstset{
+  basicstyle=\small\ttfamily,
+  columns=flexible,
+  breaklines=true
+}
+\long\def\omitit #1{}
+
+% Define the headers and footers
+
+\usepackage{fancyhdr}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+\rhead{Computer Science 600}
+\lhead{Syllabus}
+\rfoot{Page \thepage}
+\lfoot{Fall 2018}
+
+% Use elastic spacing around the headers
+
+\usepackage{titlesec}
+\titlespacing\section{0pt}{6pt plus 4pt minus 2pt}{4pt plus 2pt minus 2pt}
+
+\newcommand{\syllabustitle}[1]
+{
+  \begin{center}
+    \begin{center}
+      \bf
+      CMPSC 600\\Senior Thesis I\\
+      Fall 2018\\
+      \medskip
+    \end{center}
+    \bf
+    #1
+  \end{center}
+}
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\syllabustitle{Syllabus}
+
+\vspace*{-.3in}
+\subsection*{Course Instructors}
+
+%%%%%%
+\omitit{
+\begin{table}[th!]
+\begin{tabular}{ll}
+~&~ \\
+\begin{tabular}[c]{@{}l@{}}Dr. Oliver BONHAM-CARTER\\ Office: Alden Hall 104\\ Email:  {\tt obonhamcarter@allegheny.edu}\end{tabular} & 
+\begin{tabular}[c]{@{}l@{}}Dr. Janyl JUMADINOVA\\     Office: Alden Hall 105\\ Email:  {\tt jjumadinova@allegheny.edu} \end{tabular} \\
+~&~ \\
+\begin{tabular}[c]{@{}l@{}}Dr. Gregory M KAPFHAMMER\\ Office: Alden Hall 108\\ Email:  {\tt gkapfhammer@allegheny.edu}\end{tabular}   & 
+\begin{tabular}[c]{@{}l@{}}Dr. Aravind MOHAN\\        Office: Alden Hall 106\\ Email:  {\tt amohan@allegheny.edu}\end{tabular}        
+\end{tabular}
+\end{table}
+
+}% end of omitit{}
+
+
+\begin{tabular}{c c}
+
+\begin{minipage}{3.5in}
+Dr. Oliver BONHAM-CARTER \\
+\noindent Office Location: Alden Hall 104 \\
+\noindent Email: \url{obonhamcarter@allegheny.edu} \\
+\end{minipage} &
+
+\begin{minipage}{3.5in}
+Dr. Janyl JUMADINOVA\\
+\noindent Office Location: Alden Hall 105 \\
+\noindent Email: \url{jjumadinova@allegheny.edu} \\
+\end{minipage} \\
+
+\begin{minipage}{3.5in}
+Dr. Gregory KAPFHAMMER\\
+\noindent Office Location: Alden Hall 108 \\
+\noindent Email: \url{gkapfham@allegheny.edu} \\
+\end{minipage} &
+
+\begin{minipage}{3.5in}
+Dr. Aravind MOHAN\\
+\noindent Office Location: Alden Hall Room 106\\
+\noindent Email: \url{amohan@allegheny.edu} \\
+\end{minipage}
+
+\end{tabular}
+
+
+\vspace*{-.3in}
+
+\subsection*{Instructors' Office Hours}
+
+Please visit the web sites of the course instructors to view their office hours. Using the ``appointment slots''
+feature of Google Calendar, you can select an available meeting time. After picking your time slot, the reserved meeting will appear in both your Google Calendar and the instructor's.
+
+\vspace*{-.1in}
+\begin{itemize}
+  \itemsep -.25em
+  \item Oliver BONHAM-CARTER, \url{http://www.cs.allegheny.edu/sites/obonhamcarter/}
+  \item Janyl JUMADINOVA, \url{http://www.cs.allegheny.edu/sites/jjumadinova/}
+  \item Gregory KAPFHAMMER, \url{http://www.cs.allegheny.edu/sites/gkapfham/}
+  \item Aravind MOHAN, \url{http://www.cs.allegheny.edu/sites/amohan/}
+\end{itemize}
+
+
+\vspace*{-.25in}
+\subsection*{Course Communication}
+
+Throughout the semester, students and faculty will use Slack to support course communication. Whenever possible, students are also encouraged to post appropriate questions to a channel in Slack, which is available at \url{https://cs-seniorthesis2018.slack.com}. Moreover, all students are required to use GitHub repositories to submit all of the deliverables for this course's various projects.
+
+\vspace*{-.1in}
+\subsection*{Course Schedule}
+
+Organized according to the calendar month during which an activity takes place or a project is due, the following table outlines this course's schedule for the entire academic semester. Some of these dates are approximate and, if the need to do so presents itself, it is possible for the course instructors to modify
+the proposed schedule and notify the class of any changes via email or Slack. Unless it is otherwise noted that there is no class session (e.g., on October 23, which is the College's Gator Day), it is assumed that, even if there is a course project due or a research task to complete, you will still attend a research group meeting during the scheduled session for this course.
+
+
+\begin{center}
+\begin{longtable}{r|l}
+
+\hline
+
+August 28 & No class on the first day of the semester \\
+
+\hline
+
+% September 5  & Release Project One: Title, Abstract, Readers       \\
+% September 7  & Submit Project One: Title, Abstract, Readers        \\
+% September 8  & First and Second Readers Assigned                   \\
+September 10 & Ensure your correct registration for CMPSC 600 with First Reader            \\
+% September 12 & Schedule Weekly Meeting Time With Your First Reader \\
+September 11 & Release Project Two: Senior Thesis Proposal         \\
+September 18 & Release Project Three: Status Update \\
+September 25 & Discuss Thesis Proposal and Status Update \\
+
+\hline
+
+October 2  & Submit Project Three: Status Update                \\
+October 9 & Fall Break --- No Class                            \\
+October 16 & Discuss the Oral Defense of Senior Thesis Proposal \\
+October 23 & Gator Day --- No Class                             \\
+October 30 & Submit Project Two: Senior Thesis Proposal         \\
+October 30 & Schedule Proposal Defense with Pauline Lanzine     \\
+
+\hline
+
+November 6  & Release Project Four: Senior Thesis Chapters     \\
+November 13 & Get Technical Report Number from Pauline Lanzine \\
+November 20 & Review Outlines of Senior Thesis Chapters        \\
+November 27 & Review Rough Drafts of Senior Thesis Chapters    \\
+
+\hline
+
+December 4  & Review Final Drafts of Senior Thesis Chapters \\
+December 11 & Submit Project Four: Senior Thesis Chapters   \\
+
+\hline
+
+November 1 -- November 30 & Oral Defense of Thesis Proposal          \\
+November 5 -- November 9 & Register for CMPSC 610 with first reader \\
+
+\hline
+
+%September through December & Meet with first reader on a regular basis          \\
+September through December & Communicate with instructors and students in Slack \\
+
+\hline
+
+\end{longtable}
+\end{center}
+
+\vspace*{-.25in}
+
+\noindent Please note that, unless evidence of extenuating circumstances is presented in writing to all of the instructors, a student's grade in the course will be reduced if the stated deadlines are not met. Students who have questions or concerns about these deadlines should talk with their first reader.
+
+\subsection*{Required Textbooks}
+
+\noindent{\em On Being a Scientist: A Guide to Responsible Conduct in Research}
+(Third Edition).  Committee on Science, Engineering, and Public Policy, National Academy of Sciences, National Academy of Engineering, and Institute of Medicine. ISBN: 0309119715, 82 pages, 2009.\\ (References to the textbook are abbreviated as ``OBAS'').
+
+\noindent{\em BUGS in Writing: A Guide to Debugging Your Prose} (Second Edition). Lyn Dupr\'e.  Addison-Wesley Professional.  ISBN-10: 020137921X and ISBN-13: 978-0201379211, 704 pages, 1998.\\ (References to the textbook are abbreviated as ``BIW'').
+
+\noindent{\em Writing for Computer Science} (Second Edition).  Justin Zobel. Springer ISBN-10: 1852338024 and ISBN-13: 978-1852338022, 270 pages, 2004. \\ (References to the textbook are abbreviated as ``WFCS'').
+
+\subsection*{Overview of the Grading Policies}
+
+Final grades are determined after the entire faculty of the Department of Computer Science --- not just your course instructor for CMPSC 600 --- review and discuss all of the submitted deliverables.
+
+Your grade in CMPSC 600 will be based on a combination of the following activities and deliverables. Percentages are not given because we recognize that the senior thesis experience differs from one student to the next and that there are many variables, such as the nature of the project and the availability of
+external resources, that can influence the relative importance of these criteria. However, it is important to note that a large percentage of your grade depends upon your written thesis proposal, the oral defense of your thesis proposal, and your two thesis chapters.
+
+\begin{itemize}
+  \itemsep -.25em
+
+  \item {\bf Class Participation}: As previously mentioned in the ``Course Schedule'' section, all students are required to attend all of the Tuesday class sessions and to fully participate in their research group meetings. Additionally, this also requires regular contributions, in the form of questions and comments, to the course's Slack team. If it is required that additional meetings are necessary with the first and /or second reader, then  an appointment should be made during that reader's office hours.
+
+
+  \item {\bf Course Repositories}: This involves students creating, at minimum, a GitHub version control repository for each of the assigned course projects. Students should click the relevant link in the Slack team to accept and begin working on the assignment. Now, you may follow the instructions in your repository's README file to complete and submit the assignment, regularly using the Travis system and GitHub's tagging mechanism to release PDFs of your proposal with versions that adhere to the semantic versioning standard. Course instructors will only grade and provide feedback on projects that are stored and released through GitHub.
+
+  \item {\bf Status Update}: This document should describe the progress that a student has made on identifying a topic for their senior thesis and completing the preliminary research needed to demonstrate its feasibility. Written with feedback from your first and second readers, your status update should be stored and released through the appropriate GitHub repository.
+
+  \item {\bf Written Proposal}: This document must be submitted, through the appropriate GitHub repository, to both your first and second reader. Subject to multiple rounds of extensive revision, this technical document must be formatted according to the Department's thesis proposal style requirements and approved for a subsequent defense by your first reader.
+
+  \item {\bf Proposal Defense}: This event is scheduled in consultation with your first and second reader and the building coordinator, Pauline Lanzine. Students may not schedule their proposal defense until their thesis proposal has been formally approved, after multiple rounds of revision, by their first reader. Evidence of this approval must be submitted to Pauline Lanzine when scheduling your defense. In particular, your first reader must place a note in your proposal's GitHub commit log to indicate that your proposal is approved for an oral defense.
+
+  \item {\bf Thesis Chapters}: Any two chapters of your final senior thesis must be submitted to the course instructor by the aforementioned deadline. Written in a professional and scientific style, these chapters must be formatted in the Department's thesis style; note that this style, which is different from the proposal style, will be available in an appropriate GitHub repository.
+
+\end{itemize}
+
+\subsection*{Details About Course Expectations and Deliverables}
+
+\subsubsection*{Class Participation}
+
+You must regularly attend a research group meeting on Tuesday lead by your first reader, who will report on your participation when the department's faculty meet to assign final grades for this course. Students are expected to come to each class meeting with a status update on their progress and a meeting agenda. Students should conclude each meeting by listing the tasks that they want to complete before the next meeting. In addition, students should regularly participate in the discussions on the relevant channels in the Slack team for our course. Your participation on Slack may involve giving a quick status update to your first reader, inviting your first reader to examine a draft of your proposal or
+compile and run a new version of a program, or, within the bounds of the Honor Code, answering a question from another senior conducting their thesis research.
+
+%Finally, all students are required to attend and actively participate in all of the class sessions that will involve both meetings with their research group and informal discussion during the departmental coffee and tea session. Evidence of regular participation must be submitted to the course instructor; failure to participate and submit this evidence will result in the reduction of your grade in CMPSC 600.
+
+\subsubsection*{GitHub Repositories}
+
+Every student must accept each of the course projects given as an assignment via GitHub Classroom, thus creating a GitHub repository customized for the student and that specific project. All of these GitHub repositories should have a README file that clearly explains the steps that a student took to complete and release the final version of the assignment. In addition to containing the \LaTeX{} source code that fulfills the assignment, each GitHub repository should feature releases of the compiled PDF files that are tagged with numbers that adhere to the semantic versioning standard described at \url{http://semver.org/}. The release of a compiled PDF file can be accomplished automatically by using both the tagging and releases feature provided by GitHub and, additionally, the continuous integration system provided by Travis. Your first and second readers will download, read, and comment on a released PDF at semantic version 1.0.0 or higher. Students who are not able to automatically release PDFs of their projects may instead manually create them by using the GitHub interface. Please see an instructor if you have questions about using GitHub. Failure to either regularly commit to your GitHub repositories or
+to make releases of your PDFs will lead to a decrease in your final grade for CMPSC 600.
+
+\subsubsection*{Thesis Proposal}
+
+The proposal should follow the Department's proposal style and thus must include an abstract, the main body of your proposal, a tentative schedule for completing the project, a bibliography, and any other information deemed important by your first reader. These other details will often include one or more of the following: a survey of the existing literature; an overview of your proposed technique; technical diagrams and formal statements of algorithms illustrating your main approach; the description of an evaluation method; examples or code artifacts or other evidence that you understand the nature of the work you are proposing and can feasibly complete it in the time available.  Finally, the proposal must fully adhere to professional standards of writing.
+
+Although your first reader will be your primary contact person as you write and revise your thesis proposal, you may involve your second reader as appropriate. That is, your first reader will make suggestions on your submitted documents under the expectation that you will revise multiple proposal drafts. You must work at a pace that will ensure that you complete an approved senior thesis proposal before the stated deadline. Failure to complete a final thesis proposal and secure formal approval of your proposal before this date will result in the reduction of your final grade in CMPSC 600. Securing formal approval of your thesis involves a student having their first reader note in the GitHub commit log that the final version of the thesis proposal is suitable for a senior thesis defense. This evidence must be shown to both a course instructor and Pauline Lanzine when scheduling your proposal defense; no defense will be scheduled without this evidence of approval.
+
+\subsubsection*{Proposal Defense}
+
+Lasting approximately one hour in total, a proposal defense starts with a prepared, formal presentation of about ten minutes in which you lay out the
+essential parts of your chosen project under the assumption that your first and second reader have already studied your thesis proposal. Following the
+presentation that is supported by polished slides, you will participate in a discussion with your readers to identify potential challenges, refine or extend some aspects of the thesis proposal, and ensure that your project is feasible and appropriate. All components of your proposal defense should be completed in consultation with your first and second readers. You must schedule your proposal defense during the stated course session. Your grade in CMPSC 600 will be reduced if you miss the deadline for scheduling or conducting the defense of your thesis proposal. The date of a scheduled defense can only be changed in the event of a documented extenuating circumstance.
+
+\subsubsection*{Thesis Chapters}
+
+Your two chapters, due on the previously stated date, should represent a significant addition to or extension of the material in your proposal. Don't
+simply ``split the proposal into two chapters'' --- this usually does not work well since your chapters must represent work completed, not work being proposed. Chapters are judged according to the same professional standards as the proposal; they must include a full bibliography, a preliminary table of contents, lists of any figures and tables, and any other items (e.g., the formal statement of key algorithms) required by your first reader.
+
+As you write your chapters in consultation with your readers, allow these individuals to comment on your drafts and then make all of their requested
+changes. You will also be given the opportunity to plan and revise your thesis chapters during certain meetings of your research group. You should plan to write several drafts of the chapters before submitting them on the due date; failure to turn them in by the stated deadline will result in the reduction of your final grade in CMPSC 600.
+
+\subsubsection*{Using Email}
+
+Although we will primarily use Slack for class communication, we will sometimes use email to send announcements about important class matters. It is your responsibility to check your email at least once a day and to ensure that you can reliably send and receive emails. This class policy is based on the statement about the use of email that appears in {\em The Compass}, the student handbook.
+
+\subsection*{Honor Code}
+
+The Academic Honor Program that governs the academic program at Allegheny
+College is described in the Allegheny Academic Bulletin. The Honor Program
+applies to all work that is submitted for academic credit or to meet non-credit
+requirements for graduation at Allegheny College. This includes all work
+assigned for these classes (e.g., source code, technical diagrams, and your
+written content); deliverables that are nearly identical the work of others will
+be taken as evidence of violating the Honor Code. All students who have enrolled
+in the College will work under the Honor Program. Each student who has
+matriculated at the College has acknowledged the following pledge:
+
+\begin{quote}
+I hereby recognize and pledge to fulfill my responsibilities, as defined in the Honor Code, and to maintain the
+integrity of both myself and the College community as a whole.
+\end{quote}
+
+\subsection*{Disability Services}
+
+The Americans with Disabilities Act (ADA) is a federal anti-discrimination
+statute that provides comprehensive civil rights protection for persons with
+disabilities.  Among other things, this legislation requires all students with
+disabilities be guaranteed a learning environment that provides for reasonable
+accommodation of their disabilities. Students with disabilities who believe they
+may need accommodations in this class are encouraged to contact Disability
+Services at 332--2898.  Disability Services is part of the Learning Commons and
+is located in Pelletier Library. Please do this as soon as possible to ensure
+that approved accommodations are implemented in a timely fashion.
+
+\subsection*{Welcome to an Adventure in Computer Science}
+
+CMPSC 600 affords you the opportunity to pursue independent research in computer
+science and to ensure that your work has a positive influence on your future
+plans, the students and faculty at Allegheny College, and a broader society that
+relies heavily on computer hardware and software.  At the start of your senior
+year, we invite you to pursue this class with great enthusiasm and vigor.
+
+\end{document}
+
+
+
+\begin{table}[th!]
+\begin{tabular}{ll}
+~&~ \\
+\begin{tabular}[c]{@{}l@{}}Dr. Oliver BONHAM-CARTER\\ Office: Alden Hall 104\\ Email:  {\tt obonhamcarter@allegheny.edu}\end{tabular} & 
+\begin{tabular}[c]{@{}l@{}}Dr. Janyl JUMADINOVA\\     Office: Alden Hall 105\\ Email:  {\tt jjumadinova@allegheny.edu} \end{tabular} \\
+~&~ \\
+\begin{tabular}[c]{@{}l@{}}Dr. Gregory M KAPFHAMMER\\ Office: Alden Hall 108\\ Email:  {\tt gkapfhammer@allegheny.edu}\end{tabular}   & 
+\begin{tabular}[c]{@{}l@{}}Dr. Aravind MOHAN\\        Office: Alden Hall 106\\ Email:  {\tt amohan@allegheny.edu}\end{tabular}        
+\end{tabular}
+\end{table}
+
+%%%%%%%
+\omitit{ %% Does not compile on my Mac. :-(
+\begin{tabular}{c c}
+
+\begin{minipage}{3.5in}
+Dr.\ Oliver Bonham-Carter \\
+\noindent Office Location: Alden Hall 104 \\
+\noindent Email: \url{obonhamcarter@allegheny.edu} \\
+\end{minipage} &
+
+\begin{minipage}{3.5in}
+Dr.\ Janyl Jumadinova\\
+\noindent Office Location: Alden Hall 105 \\
+\noindent Email: \url{jjumadinova@allegheny.edu} \\
+\end{minipage} \\
+
+\begin{minipage}{3.5in}
+Dr.\ Gregory M.\ Kapfhammer\\
+\noindent Office Location: Alden Hall 108 \\
+\noindent Email: \url{gkapfham@allegheny.edu} \\
+\end{minipage} &
+
+\begin{minipage}{3.5in}
+Dr.\ Aravind Mohan\\
+\noindent Office Location: Alden Hall Room 106\\
+\noindent Email: \url{amohan@allegheny.edu} \\
+\end{minipage}
+
+\end{tabular}
+}% end of omitit{}
